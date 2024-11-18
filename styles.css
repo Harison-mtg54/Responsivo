@@ -1,9 +1,8 @@
-/* Estilos básicos */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background: #f5f5f5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,25 +10,18 @@ body {
 }
 
 .container {
-    width: 100%;
-    max-width: 400px;
-    margin: 20px;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.form-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilo do título */
 h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #333;
 }
 
-/* Estilo dos inputs */
 .input-group {
     margin-bottom: 15px;
 }
@@ -37,87 +29,44 @@ h2 {
 .input-group label {
     display: block;
     margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
 }
 
 .input-group input {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
-/* Estilo do botão */
-button {
+.btn {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
-    color: #fff;
+    background: #007BFF;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
+.btn:hover {
+    background: #0056b3;
 }
 
-/* Links para alternar entre Login e Cadastro */
 .toggle-form {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 15px;
+    color: #666;
 }
 
 .toggle-form a {
-    color: #007bff;
+    color: #007BFF;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .toggle-form a:hover {
     text-decoration: underline;
-}
-
-/* Media Queries para Responsividade */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-        max-width: 100%;
-        margin: 10px;
-    }
-
-    .form-container {
-        padding: 15px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    .input-group input {
-        padding: 8px;
-    }
-
-    button {
-        padding: 12px;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        width: 100%;
-        max-width: 100%;
-        margin: 5px;
-    }
-
-    h2 {
-        font-size: 18px;
-    }
-
-    .input-group input {
-        padding: 7px;
-    }
-
-    button {
-        padding: 10px;
-    }
 }
