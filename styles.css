@@ -1,3 +1,4 @@
+/* Estilo básico */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -14,6 +15,8 @@ body {
     padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Limite de largura */
 }
 
 h2 {
@@ -69,4 +72,27 @@ h2 {
 
 .toggle-form a:hover {
     text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Adiciona espaço em dispositivos menores */
+    }
+
+    .container {
+        padding: 15px 20px; /* Ajusta o preenchimento interno */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Reduz o tamanho da fonte */
+    }
+
+    .input-group input {
+        padding: 8px; /* Reduz o espaço interno dos inputs */
+    }
+
+    .btn {
+        padding: 8px; /* Ajusta o tamanho do botão */
+    }
 }
