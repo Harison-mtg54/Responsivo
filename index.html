@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Menu</title>
-    <!-- Link para o arquivo CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Referência ao arquivo CSS -->
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -13,7 +12,7 @@
         <h1>Bem-vindo ao Menu Principal</h1>
         <p>Selecione uma opção abaixo para continuar:</p>
     </header>
-    
+
     <!-- Menu de navegação -->
     <nav>
         <ul>
@@ -22,21 +21,21 @@
             <li><a href="#contact">Contato</a></li>
             <li><a href="#profile">Perfil</a></li>
             <li><a href="#settings">Configurações</a></li>
-            <li><a href="#logout">Sair</a></li>
+            <li><a href="#logout" onclick="logout()">Sair</a></li>
         </ul>
     </nav>
-    
+
     <!-- Seções -->
     <section id="home">
         <h2>Início</h2>
         <p>Aqui é o início da sua navegação. Você pode ver informações importantes ou resumos aqui.</p>
     </section>
-    
+
     <section id="about">
         <h2>Sobre</h2>
         <p>Conte-nos um pouco sobre você ou sobre a empresa/serviço que você oferece.</p>
     </section>
-    
+
     <section id="contact">
         <h2>Contato</h2>
         <p>Entre em contato conosco através do e-mail ou telefone abaixo:</p>
@@ -45,21 +44,28 @@
             <p>Telefone: (11) 12345-6789</p>
         </address>
     </section>
-    
+
     <section id="profile">
         <h2>Perfil</h2>
         <p>Aqui você pode ver ou editar o seu perfil.</p>
     </section>
-    
+
     <section id="settings">
         <h2>Configurações</h2>
         <p>Gerencie suas preferências e configurações do sistema.</p>
     </section>
-    
+
     <!-- Rodapé -->
     <footer>
         <p>&copy; 2024 Minha Página Simples - Todos os direitos reservados.</p>
     </footer>
 
+    <script>
+        // Função para simular o logout
+        function logout() {
+            // Quando o usuário clicar em "Sair", redireciona de volta para a tela de login
+            window.location.href = "login.html"; // Redireciona para a página de login
+        }
+    </script>
 </body>
 </html>
