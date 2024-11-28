@@ -3,23 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Login</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Login ou Cadastro</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Referência ao arquivo CSS -->
 </head>
 <body>
-    <section class="login-container">
-        <h2>Login</h2>
-        <form id="loginForm">
-            <label for="username">Nome de usuário:</label>
-            <input type="text" id="username" name="username" required>
+    <div class="container">
+        <div class="form-container">
+            <h2>Login ou Cadastro</h2>
 
-            <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" required>
+            <!-- Formulário de login -->
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                </div>
+                <button type="submit" class="btn">Entrar</button>
+                <p class="toggle-form">Ainda não tem uma conta? <a href="#" id="show-register">Cadastre-se</a></p>
+            </form>
 
-            <button type="submit">Entrar</button>
-        </form>
-    </section>
+            <!-- Formulário de cadastro -->
+            <form id="register-form" style="display: none;">
+                <div class="input-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                </div>
+                <div class="input-group">
+                    <label for="email-register">Email</label>
+                    <input type="email" id="email-register" name="email-register" placeholder="Digite seu email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password-register">Senha</label>
+                    <input type="password" id="password-register" name="password-register" placeholder="Digite sua senha" required>
+                </div>
+                <button type="submit" class="btn">Cadastrar</button>
+                <p class="toggle-form">Já tem uma conta? <a href="#" id="show-login">Faça login</a></p>
+            </form>
+        </div>
+    </div>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Referência ao arquivo JS -->
 </body>
 </html>
