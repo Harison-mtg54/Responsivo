@@ -13,4 +13,11 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     } else {
         alert("Email ou senha incorretos!");
     }
+    // Verifica se o usuário está autenticado, caso contrário, redireciona para o login
+window.onload = function() {
+    if (localStorage.getItem('loggedIn')) {
+        window.location.href = "index.html"; // Redireciona para a página principal
+    }
+};
+
 });
