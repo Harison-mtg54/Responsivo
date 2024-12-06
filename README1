@@ -1,0 +1,23 @@
+/meu-site
+│
+├── /assets           # Imagens, fontes e outros arquivos estáticos
+│   ├── /images       # Pastas para imagens
+│   ├── /fonts        # Pastas para fontes (se necessário)
+│
+├── /css              # Arquivos CSS
+│   ├── style.css     # Seu arquivo CSS principal
+│   ├── reset.css     # Se você usar algum reset de CSS
+│
+├── /js               # Arquivos JavaScript
+│   ├── script.js     # Seu arquivo JS principal
+│
+├── index.html        # Página inicial do seu site
+│
+├── about.html        # Outra página, se necessário
+│
+├── /partials         # Componentes ou partes reutilizáveis do HTML
+│   ├── header.html   # Cabeçalho do site
+│   ├── footer.html   # Rodapé do site
+│
+├── README.md         # Documentação do projeto (opcional, mas recomendado)
+└── .gitignore        # Arquivos ou pastas a serem ignorados pelo Git
