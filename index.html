@@ -20,7 +20,6 @@
             <li><a href="#about">Sobre</a></li>
             <li><a href="#contact">Contato</a></li>
             <li><a href="#profile">Perfil</a></li>
-            <li><a href="#settings">Configurações</a></li>
             <li><a href="#" onclick="logout()">Sair</a></li>
         </ul>
     </nav>
@@ -61,10 +60,24 @@
     </footer>
 
     <script>
-        // Função para simular o logout
+        // Verifica se o usuário está logado
+        window.onload = function() {
+            if (!localStorage.getItem('loggedIn')) {
+                // Se não estiver logado, redireciona para a página de login
+                window.location.href = "login.html";
+            }
+        };
+
+        // Função logout
         function logout() {
-            // Quando o usuário clicar em "Sair", redireciona de volta para a tela de login
-            window.location.href = "login.html"; // Redireciona para a página de login
+            // Remove a chave loggedIn do localStorage
+            localStorage.removeItem('loggedIn');
+            
+            // Alerta ao usuário
+            alert('Você foi deslogado com sucesso!');
+            
+            // Redireciona para a tela de login
+            window.location.href = "login.html";
         }
     </script>
 </body>
