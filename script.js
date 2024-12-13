@@ -42,3 +42,13 @@ document.getElementById('show-login').addEventListener('click', function(event) 
     document.getElementById('login-form').style.display = 'block';
     document.getElementById('register-form').style.display = 'none';
 });
+function logout() {
+    // Remove a chave loggedIn do localStorage
+    localStorage.removeItem('loggedIn');
+
+    // Alerta ao usuário
+    alert('Você foi deslogado com sucesso!');
+
+    // Redireciona para a tela de login
+    window.location.href = "login.html";
+}
