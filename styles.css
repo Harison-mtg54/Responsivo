@@ -1,86 +1,89 @@
-/* Reset básico */
+/* Reset básico para garantir consistência entre navegadores */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo do corpo */
+/* Estilo geral do corpo */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    font-family: Arial, sans-serif; /* Define fonte padrão para todo o site */
+    background-color: #f4f4f9; /* Define a cor de fundo principal */
+    color: #333; /* Define a cor do texto */
 }
 
 /* Estilo do cabeçalho */
 header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #4CAF50; /* Define a cor de fundo do cabeçalho */
+    color: white; /* Define a cor do texto do cabeçalho */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px; /* Espaçamento externo */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 /* Estilo do menu de navegação */
 nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    background-color: #333;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove espaçamento interno */
+    text-align: center; /* Centraliza os itens */
+    background-color: #333; /* Define a cor de fundo */
+    margin: 20px; /* Espaçamento externo */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline; /* Exibe os itens horizontalmente */
+    margin-right: 20px; /* Espaçamento entre os itens */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 10px 20px;
+    text-decoration: none; /* Remove sublinhado */
+    color: white; /* Define a cor do texto */
+    font-weight: bold; /* Define o peso da fonte */
+    padding: 10px 20px; /* Espaçamento interno */
+    transition: background-color 0.3s ease; /* Transição suave no hover */
 }
 
 nav ul li a:hover {
-    background-color: #555;
-    border-radius: 5px;
+    background-color: #555; /* Cor de fundo no hover */
+    border-radius: 5px; /* Borda arredondada no hover */
 }
 
 /* Estilo das seções */
 section {
-    padding: 20px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px; /* Espaçamento externo */
+    background-color: white; /* Define a cor de fundo */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 section h2 {
-    margin-bottom: 15px;
-    font-size: 1.8em;
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+    font-size: 1.8em; /* Tamanho da fonte do título */
 }
 
 section p {
-    font-size: 1em;
-    line-height: 1.6;
+    font-size: 1em; /* Tamanho padrão para parágrafos */
+    line-height: 1.6; /* Define o espaçamento entre linhas */
 }
 
 /* Estilo do rodapé */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza o texto no rodapé */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #333; /* Define a cor de fundo */
+    color: white; /* Define a cor do texto */
+    margin-top: 20px; /* Espaçamento externo */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
-/* Estilo do formulário de login e cadastro */
-#login-form, #register-form {
+
+/* Ocultar formulários de login e cadastro por padrão */
+#login-form,
+#register-form {
     display: none; /* Oculta o formulário inicialmente */
 }
