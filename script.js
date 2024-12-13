@@ -44,3 +44,8 @@ function logout() {
     alert('Você foi deslogado com sucesso!');
     window.location.href = "login.html"; // Redireciona para a tela de login
 }
+
+// Garante que a função logout funcione apenas se o usuário estiver logado
+if (!localStorage.getItem('loggedIn')) {
+    window.location.href = "login.html";
+}
