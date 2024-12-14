@@ -73,10 +73,10 @@ section p {
 
 /* Estilo do rodapé */
 footer {
-    text-align: center; /* Centraliza o texto no rodapé */
-    padding: 20px; /* Espaçamento interno */
     background-color: #333; /* Define a cor de fundo */
     color: white; /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto no rodapé */
+    padding: 20px; /* Espaçamento interno */
     margin: 20px; /* Espaçamento externo */
     border-radius: 8px; /* Borda arredondada */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
