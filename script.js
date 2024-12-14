@@ -41,8 +41,8 @@ document.getElementById('show-login').addEventListener('click', function(event) 
 // Função logout
 function logout() {
     localStorage.removeItem('loggedIn'); // Remove a chave loggedIn
+    window.location.replace("login.html"); // Redireciona sem armazenar no histórico
     alert('Você foi deslogado com sucesso!');
-    window.location.href = "login.html"; // Redireciona para a tela de login
 }
 
 // Garante que a função logout funcione apenas se o usuário estiver logado
