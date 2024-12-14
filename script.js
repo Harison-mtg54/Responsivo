@@ -1,12 +1,19 @@
 // Verifica se o usuário já está logado no localStorage
 window.onload = function() {
-    if (localStorage.getItem('loggedIn')) {
-        // Se estiver logado, redireciona para a página principal
-        window.location.href = "index.html";
-    } else {
-        // Se não estiver logado, exibe a tela de login
-        document.getElementById('login-form').style.display = 'block';
-        document.getElementById('register-form').style.display = 'none';
+    // Verifica se o usuário está logado e na página de login
+    if (window.location.pathname.endsWith("login.html")) {
+        // Se estiver na página de login e já logado, redireciona
+        if (localStorage.getItem('loggedIn')) {
+            window.location.replace("index.html");
+        } else {
+            document.getElementById('login-form').style.display = 'block';
+            document.getElementById('register-form').style.display = 'none';
+        }
+    } else if (window.location.pathname.endsWith("index.html")) {
+        // Verifica se o usuário está logado para acessar index
+        if (!localStorage.getItem('loggedIn')) {
+            window.location.replace("login.html");
+        }
     }
 };
 
