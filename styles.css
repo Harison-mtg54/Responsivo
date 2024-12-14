@@ -77,7 +77,7 @@ footer {
     padding: 20px; /* Espaçamento interno */
     background-color: #333; /* Define a cor de fundo */
     color: white; /* Define a cor do texto */
-    margin-top: 20px; /* Espaçamento externo */
+    margin: 20px; /* Espaçamento externo */
     border-radius: 8px; /* Borda arredondada */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
