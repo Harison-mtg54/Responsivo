@@ -1,4 +1,3 @@
-// Verifica se o usuário já está logado no localStorage
 window.onload = function() {
     // Verifica se o usuário está logado e na página de login
     if (window.location.pathname.endsWith("login.html")) {
