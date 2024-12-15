@@ -87,3 +87,102 @@ footer {
 #register-form {
     display: none; /* Oculta o formulário inicialmente */
 }
+
+/* Estilo básico da tela de login */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Limite de largura */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.toggle-form {
+    text-align: center;
+    margin-top: 15px;
+    color: #666;
+}
+
+.toggle-form a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.toggle-form a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Adiciona espaço em dispositivos menores */
+    }
+
+    .container {
+        padding: 15px 20px; /* Ajusta o preenchimento interno */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Reduz o tamanho da fonte */
+    }
+
+    .input-group input {
+        padding: 8px; /* Reduz o espaço interno dos inputs */
+    }
+
+    .btn {
+        padding: 8px; /* Ajusta o tamanho do botão */
+    }
+}
