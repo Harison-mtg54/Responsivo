@@ -7,106 +7,108 @@
 
 /* Estilo geral do corpo */
 body {
-    font-family: Arial, sans-serif; /* Define fonte padrão para todo o site */
-    background-color: #f4f4f9; /* Define a cor de fundo principal */
-    color: #333; /* Define a cor do texto */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
 /* Estilo do cabeçalho */
 header {
-    background-color: #333; /* #4CAF50 Define a cor de fundo do cabeçalho */
-    color: white; /* Define a cor do texto do cabeçalho */
-    text-align: center; /* Centraliza o texto */
-    padding: 20px; /* Espaçamento interno */
-    margin: 20px; /* Espaçamento externo */
-    border-radius: 8px; /* Borda arredondada */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background: linear-gradient(90deg, #444, #666);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo do menu de navegação */
 nav ul {
-    list-style: none; /* Remove marcadores da lista */
-    padding: 0; /* Remove espaçamento interno */
-    text-align: center; /* Centraliza os itens */
-    background-color: #333; /* Define a cor de fundo */
-    margin: 20px; /* Espaçamento externo */
-    border-radius: 8px; /* Borda arredondada */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+    background-color: #333;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 nav ul li {
-    display: inline; /* Exibe os itens horizontalmente */
-    margin-right: 20px; /* Espaçamento entre os itens */
+    margin: 0 10px; /* Espaçamento uniforme */
 }
 
 nav ul li a {
-    text-decoration: none; /* Remove sublinhado */
-    color: white; /* Define a cor do texto */
-    font-weight: bold; /* Define o peso da fonte */
-    padding: 10px 20px; /* Espaçamento interno */
-    transition: background-color 0.3s ease; /* Transição suave no hover */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #555; /* Cor de fundo no hover */
-    border-radius: 5px; /* Borda arredondada no hover */
+    background-color: #555;
+    border-radius: 5px;
 }
 
 /* Estilo das seções */
 section {
-    padding: 20px; /* Espaçamento interno */
-    margin: 20px; /* Espaçamento externo */
-    background-color: white; /* Define a cor de fundo */
-    border-radius: 8px; /* Borda arredondada */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
 }
 
 section h2 {
-    margin-bottom: 15px; /* Espaçamento abaixo do título */
-    font-size: 1.8em; /* Tamanho da fonte do título */
+    margin-bottom: 15px;
+    font-size: 2rem;
+    text-align: center;
 }
 
 section p {
-    font-size: 1em; /* Tamanho padrão para parágrafos */
-    line-height: 1.6; /* Define o espaçamento entre linhas */
+    font-size: 1em;
+    line-height: 1.6;
 }
 
 /* Estilo do rodapé */
 footer {
-    background-color: #333; /* Define a cor de fundo */
-    color: white; /* Define a cor do texto */
-    text-align: center; /* Centraliza o texto no rodapé */
-    padding: 20px; /* Espaçamento interno */
-    margin: 20px; /* Espaçamento externo */
-    border-radius: 8px; /* Borda arredondada */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background: linear-gradient(90deg, #444, #666);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Ocultar formulários de login e cadastro por padrão */
 #login-form,
 #register-form {
-    display: none; /* Oculta o formulário inicialmente */
+    display: none;
 }
 
 /* Estilo básico da tela de login */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 .container {
     background: #fff;
     padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px; /* Limite de largura */
+    max-width: 400px;
 }
 
 h2 {
@@ -137,15 +139,17 @@ h2 {
 .btn {
     width: 100%;
     padding: 10px;
-    background: #007BFF;
+    background: linear-gradient(90deg, #007BFF, #0056b3);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn:hover {
     background: #0056b3;
+    transform: scale(1.05); /* Leve aumento no hover */
 }
 
 .toggle-form {
@@ -167,22 +171,35 @@ h2 {
 /* Responsividade */
 @media (max-width: 600px) {
     body {
-        padding: 10px; /* Adiciona espaço em dispositivos menores */
+        padding: 10px;
     }
 
     .container {
-        padding: 15px 20px; /* Ajusta o preenchimento interno */
+        padding: 15px 20px;
     }
 
     h2 {
-        font-size: 1.5rem; /* Reduz o tamanho da fonte */
+        font-size: 1.5rem;
     }
 
     .input-group input {
-        padding: 8px; /* Reduz o espaço interno dos inputs */
+        padding: 8px;
     }
 
     .btn {
-        padding: 8px; /* Ajusta o tamanho do botão */
+        padding: 8px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
     }
 }
