@@ -202,4 +202,14 @@ h2 {
     section h2 {
         font-size: 1.5rem;
     }
+    
+}@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Muda para layout vertical */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espaçamento vertical */
+    }
 }
