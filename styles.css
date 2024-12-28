@@ -34,7 +34,7 @@ nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center; /* Centraliza os itens */
+    justify-content: space-around; /* Centraliza os itens */
     background-color: #333;
     margin: 20px auto;
     width: 100%;
