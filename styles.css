@@ -32,7 +32,7 @@ header {
 /* Estilo do menu de navegação */
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 20px;
     display: flex;
     justify-content: space-around; /* Centraliza os itens */
     background-color: #333;
